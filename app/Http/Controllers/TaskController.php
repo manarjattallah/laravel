@@ -31,7 +31,7 @@ class TaskController extends Controller
         return view('index',compact('tasks'));
     }
 
-    
+
 
     public function update(Request $request, $id)
     {
