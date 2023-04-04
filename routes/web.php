@@ -18,11 +18,11 @@ use App\Models\Task;
 |
 */
 
-Route::get('/',[TaskController::class, 'index']);
+Route::get('/tasks',[TaskController::class, 'index']);
 Route::delete('delete/{id}',[TaskController::class, 'destroy'])->name('task.delete');
 Route::post('edit/{id}',[TaskController::class, 'edit']);
 Route::put('update/{id}',[TaskController::class, 'update']);
-Route::post('insert/{id}',[TaskController::class, 'store'])->name('task.insert');
+Route::post('insert',[TaskController::class, 'store'])->name('task.insert');
 
 
 

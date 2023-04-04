@@ -1,5 +1,5 @@
 
-@extends('layouts.app')
+@extends('layout.app')
 @section('content')
 
     <div class="container">
@@ -12,7 +12,7 @@
                 <div class="panel-body">
                     <!-- Display Validation Errors -->
                     <!-- New Task Form -->
-                    <form action="{{route('task.insert'}}" method="POST" class="form-horizontal">
+                    <form action="{{route('task.insert')}}" method="POST" class="form-horizontal">
                         @csrf
 
                         <!-- Task Name -->
